@@ -1,0 +1,9 @@
+rclpy==1.0.0  # ROS 2 Humble
+visualization-msgs==2.0.3  # ROS 2 Humble
+geometry-msgs==2.0.4  # ROS 2 Humble
+tf2-ros==0.20.1  # ROS 2 Humble
+transforms3d==0.3.1
+adafruit-circuitpython-mpu6050==1.0.10
+adafruit-blinka==8.15.1  # Required for board and sensor libraries
+matplotlib==3.8.0
+numpy==1.26.0
