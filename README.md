@@ -17,7 +17,7 @@ MPU 6050 SCL -> Pin 5 (I2C5-CLK) Orin
 
 Install the required libraries with the command pip install -r requirements.txt
 
-Now, for the robot model, we used a free one from https://sketchfab.com/, but any will do as long as it is in .glb format. Download the model and save it in the same folder where you saved the repo: if you downloaded another you will have to edit the file accordingly
+Now, for the robot model, we used this free one: https://sketchfab.com/](https://sketchfab.com/3d-models/biped-robot-801d2a245e4a4405a0c2152b35b5e486 , but any will do as long as it is in .glb format. Download the model and save it in the same folder where you saved the repo: if you downloaded another you will have to edit the file accordingly
 
 Put the MPU-6050 flat on a table, ensuring that the face with label is upward and a dot on this surface is on the top left corner. Then the upright direction upward is the z-axis of the chip. The direction from left to right is regarded as the X-axis. Accordingly the direction from back to front is defined as the Y-axis (see picture https://github.com/tekntrash/MPU-6050-visualizer/blob/main/MPU6050-axis.jpg)
 
