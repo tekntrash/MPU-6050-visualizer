@@ -26,6 +26,7 @@ Run the matplotlib visualizer with the commmand python matplotlib-data-visualize
 Now, for the robot model, we used this free one: https://sketchfab.com/3d-models/biped-robot-801d2a245e4a4405a0c2152b35b5e486 , but any will do as long as it is in .glb format. Download the model and save it in the same folder where you saved the repo: if you downloaded another you will have to edit the file accordingly
 
 Ensure you have RVIZ for ROS2 Humble installed: if not the easiest way is run these commands:
+
 sudo apt update && sudo apt install curl gnupg lsb-release
 
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo tee /etc/apt/trusted.gpg.d/ros.asc
