@@ -6,9 +6,13 @@ The MPU6050 is a motion tracking device commonly used in robotic applications. I
 In this repo we offer 2 tools to visualize the data from the sensor: one using RVIZ which shows a robot in all angles, and another with Matploblib, which shows the raw data in a graph form. The RVIZ part of this repo was tested in ROS 2 Humble but it may work in other versions of ROS 2 too. The host used was a Nvidia Jetson Orin AGX 64 running Ubuntu 22.04.4 LTS Jammy, but it should run on similar Jetsons such as Xavier and Nano.
 
 Install the MPU6050 to the Orin's 40 pin header: the picture https://github.com/tekntrash/MPU-6050-visualizer/blob/main/orin-pin-1.jpeg shows where pin 1 and the picture https://github.com/tekntrash/MPU-6050-visualizer/blob/main/expansion-header-pinout.png shows each one of the pins. Connect:
+
 MPU 6050 GND -> Pin 6 (GND) Orin
+
 MPU 6050 VCC -> Pin 1 (3.3V) Orin
+
 MPU 6050 SDA -> Pin 3 (I2C5-DAT) Orin
+
 MPU 6050 SCL -> Pin 5 (I2C5-CLK) Orin
 
 Install the required libraries with the command pip install -r requirements.txt
