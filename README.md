@@ -27,10 +27,15 @@ Now, for the robot model, we used this free one: https://sketchfab.com/3d-models
 
 Ensure you have RVIZ for ROS2 Humble installed: if not the easiest way is run these commands:
 sudo apt update && sudo apt install curl gnupg lsb-release
+
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo tee /etc/apt/trusted.gpg.d/ros.asc
+
 sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+
 sudo apt update
+
 sudo apt install ros-humble-rviz2
+
 source /opt/ros/humble/setup.bash
 
 Run the RVIZ visualization with the commands python RVIZ-visualizer.py in one screen: you will see the X,Y,Z,W data being shown up. In another screen run the command RVIZ2. At the lower left of the RVIZ screen click on "Add", " By topic", and "Marker". Wait a few seconds and you will see a robot showing up in the screen: you can use the mouse to reduce it
