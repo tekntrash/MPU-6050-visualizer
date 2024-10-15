@@ -39,4 +39,7 @@ sudo apt install ros-humble-rviz2
 
 source /opt/ros/humble/setup.bash
 
-Run the RVIZ visualization with the commands python RVIZ-visualizer.py in one screen: you will see the X,Y,Z,W data being shown up. In another screen run the command RVIZ2. At the lower left of the RVIZ screen click on "Add", " By topic", and "Marker". Wait a few seconds and you will see a robot showing up in the screen: you can use the mouse to reduce it
+Run the RVIZ visualization with the commands python RVIZ-visualizer.py in one screen: you will see the X,Y,Z,W data being shown up. In another screen run the command RVIZ2. At the lower left of the RVIZ screen click on "Add", " By topic", and "Marker". Wait a few seconds and you will see a robot showing up in the screen (you can use the mouse to reduce it) like in the video RVIZ-visualization.mp4
+
+TO DO:
+1 - Update RVIZ visualizer to initialize the robot in the upright position
