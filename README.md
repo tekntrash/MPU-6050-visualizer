@@ -19,8 +19,18 @@ Install the required libraries with the command pip install -r requirements.txt
 
 Verify it is correctly connected by running python quicktest.py. If it shows "I2C 1 ok!" is working fine. If not, ensure the LED light in the MPU6050 is lit and try to invert the cables VCC and SDA (don't worry, you will not burn anything)
 
+Put the MPU-6050 flat on a table, ensuring that the face with label is upward and a dot on this surface is on the top left corner. Then the upright direction upward is the z-axis of the chip. The direction from left to right is regarded as the X-axis. Accordingly the direction from back to front is defined as the Y-axis (see picture https://github.com/tekntrash/MPU-6050-visualizer/blob/main/MPU6050-axis.jpg)
+
+Run the matplotlib visualizer with the commmand python matplotlib-data-visualizer.py. You should get a screen like matplotlib-data.jpg
+
 Now, for the robot model, we used this free one: https://sketchfab.com/3d-models/biped-robot-801d2a245e4a4405a0c2152b35b5e486 , but any will do as long as it is in .glb format. Download the model and save it in the same folder where you saved the repo: if you downloaded another you will have to edit the file accordingly
 
-Put the MPU-6050 flat on a table, ensuring that the face with label is upward and a dot on this surface is on the top left corner. Then the upright direction upward is the z-axis of the chip. The direction from left to right is regarded as the X-axis. Accordingly the direction from back to front is defined as the Y-axis (see picture https://github.com/tekntrash/MPU-6050-visualizer/blob/main/MPU6050-axis.jpg)
+Ensure you have RVIZ for ROS2 Humble installed: if not the easiest way is run these commands:
+sudo apt update && sudo apt install curl gnupg lsb-release
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo tee /etc/apt/trusted.gpg.d/ros.asc
+sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+sudo apt update
+sudo apt install ros-humble-rviz2
+source /opt/ros/humble/setup.bash
 
 Run the RVIZ visualization with the commands python RVIZ-visualizer.py in one screen: you will see the X,Y,Z,W data being shown up. In another screen run the command RVIZ2. At the lower left of the RVIZ screen click on "Add", " By topic", and "Marker". Wait a few seconds and you will see a robot showing up in the screen: you can use the mouse to reduce it
